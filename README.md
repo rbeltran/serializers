@@ -1,7 +1,11 @@
 # Serializers
-Looking into different options for moving away from java ser/deser 
+Looking into different options for moving away from java ser/deser as the engineering default. There are a few known java serialization vulnerabilities out and there will probably be more. It's inherently dangerous from a security perspective. Of course not all implementations are vulnerable it depends on the use case.
+
+It's no one's fault but engineers get into habits and they're easier to persuade if you come at them with data. It also doesn't hurt if you already did the heavy lifting. :-) 
 
 This was my first attempt at a jmh benchmark. I was writing some timing tests comparing standard java ser/deser with json serialization and gzipped json and I wanted to make sure I had a sound benchmarking framework under me. Managing the timing and jvm warming and worrying about things like triggering garbage collection worried me. 
+
+The nice thing about JSON serialization is you can of course **sanitize** the JSON before you create object trees.
 
 Please feel free to download this and run it but be warned a full run takes about 20 minutes using the default jmh configs.
 
