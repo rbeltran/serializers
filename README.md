@@ -11,6 +11,12 @@ http://openjdk.java.net/projects/code-tools/jmh/
 
 I used the command line path generating an archetype. Yeah it's old school but they "strongly recommend new users make use of the archetype to setup the correct environment."
 
+# Hardware
+Apple Macbook Pro
+2.3 GHz Intel Core i7
+16GB 1600MHz DDR3
+4 Cores
+
 # Results
 Here's information from my latest run:
 ```
